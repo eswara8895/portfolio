@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pureti Eswar - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Pureti Eswar Naga Venkateswara Rao</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" hidden />
+        <label for="theme-switch" class="toggle-label">
+          <span class="icon">🌙</span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="animate-slide">Hi, I'm Pureti Eswar Naga Venkateswara Rao</h1>
+      <p class="animate-fade">Computer Science Graduate | Machine Learning Enthusiast</p>
+      <a href="#about" class="btn animate-scale">Learn More</a>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2 class="section-title">About Me</h2>
+    <p class="animate-fade">
+      As a recent graduate in computer science, I am eager to advance my education and develop my technical skills.
+      My experience includes hands-on projects in machine learning and deep learning. I thrive in challenging environments
+      where I can learn and contribute to innovative solutions. I am determined, proactive, and passionate about technology
+      and continuous learning.
+    </p>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Employee Attrition Prediction</h3>
+        <p><strong>Overview:</strong> A predictive web application designed to identify potential employee attrition in organizations.</p>
+        <p><strong>Problem Statement:</strong> High turnover can cost businesses significantly. This tool helps HR make data-driven retention decisions.</p>
+        <p><strong>Solution:</strong> Built a user-friendly interface using Flask to take employee data inputs. Trained a Random Forest Classifier on a Kaggle dataset to predict likelihood of attrition. Exported the model using Pickle for efficient reuse.</p>
+        <p><strong>Key Features:</strong> Real-time prediction, secure form input, minimalistic UI, downloadable report option.</p>
+        <p><strong>Technologies:</strong> Flask, Scikit-learn, Python, pandas, Pickle, HTML/CSS</p>
+      </div>
+      <div class="project-card">
+        <h3>Image Colorization</h3>
+        <p><strong>Overview:</strong> A deep learning-based tool that adds color to grayscale images using neural networks.</p>
+        <p><strong>Problem Statement:</strong> Many historical or black-and-white images lose emotional impact without color. This app brings them to life.</p>
+        <p><strong>Solution:</strong> Trained a convolutional autoencoder using OpenCV datasets to understand pixel mappings. Built a user interface using PySimpleGUI to simplify the colorization process for end users.</p>
+        <p><strong>Key Features:</strong> Drag-and-drop UI, side-by-side original and colorized preview, export to PNG/JPEG.</p>
+        <p><strong>Technologies:</strong> Python, OpenCV, Keras, PySimpleGUI, NumPy</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section reveal">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <div class="education-item animate-fade">
+        <h3>B.Tech - Sri Vasavi Engineering College</h3>
+        <p>2020-2024 | 78.5%</p>
+      </div>
+      <div class="education-item animate-fade">
+        <h3>Intermediate - Sasi Junior College</h3>
+        <p>2018-2020 | 94.7%</p>
+      </div>
+      <div class="education-item animate-fade">
+        <h3>SSC - Sasi EM High School</h3>
+        <p>2017-2018 | 95%</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <span class="skill animate-scale">Java</span>
+      <span class="skill animate-scale">Python</span>
+      <span class="skill animate-scale">C++</span>
+      <span class="skill animate-scale">SQL</span>
+      <span class="skill animate-scale">HTML & CSS</span>
+    </div>
+  </section>
+
+  <section id="achievements" class="section reveal">
+    <h2 class="section-title">Achievements</h2>
+    <ul class="achievements-list">
+      <li class="animate-fade">Participated in Hackoverflow2k22.</li>
+      <li class="animate-fade">Organized Hackoverflow2k23.</li>
+      <li class="animate-fade">Participated in an AWS cloud services workshop by APSCHE.</li>
+      <li class="animate-fade">Completed a 2-month internship on ML by Edunet.</li>
+    </ul>
+  </section>
+
+  <section id="certifications" class="section reveal">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="certifications-list">
+      <li class="animate-fade">Basics of HTML & CSS - Udemy</li>
+      <li class="animate-fade">HTML, CSS, and JavaScript for Beginners - Udemy</li>
+      <li class="animate-fade">Python Certification - Coursera</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h2 class="section-title">Contact</h2>
+    <p class="animate-fade">
+      <strong>Email:</strong> puretieswar18@gmail.com<br />
+      <strong>Phone:</strong> +91-8074607510<br />
+      <strong>Address:</strong> 2-76, Hanuman Temple Street, Dandagara, Tadepalligudem, 534145
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pureti Eswar. All rights reserved.</p>
+  </footer>
+
+  <a href="#hero" class="back-to-top">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
