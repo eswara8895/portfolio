@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pureti Eswar - Portfolio</title>
+  <meta name="description" content="Pureti Eswar - Python Developer specializing in Machine Learning and Generative AI. B.Tech CSE (2024)." />
+  <title>Pureti Eswar - Python Developer | Machine Learning & Generative AI</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Additions for grouped skills - existing styles.css is unchanged */
+    .skills-group { margin-bottom: 1.8rem; }
+    .skills-group h3 { margin-bottom: 0.8rem; font-weight: 600; text-align: center; }
+    .skills-group .skills-grid { justify-content: center; }
+    .project-card .tech-line { margin-top: 0.8rem; }
+    .project-card ul { margin: 0.4rem 0 0.4rem 1.2rem; }
+  </style>
 </head>
 <body>
   <header>
@@ -13,9 +22,9 @@
       <div class="logo">Pureti Eswar Naga Venkateswara Rao</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -32,40 +41,118 @@
   <section id="hero">
     <div class="hero-content">
       <h1 class="animate-slide">Hi, I'm Pureti Eswar Naga Venkateswara Rao</h1>
-      <p class="animate-fade">Computer Science Graduate | Machine Learning Enthusiast</p>
-      <a href="#about" class="btn animate-scale">Learn More</a>
+      <p class="animate-fade">Python Developer | Machine Learning &amp; Generative AI | B.Tech CSE (2024)</p>
+      <a href="#projects" class="btn animate-scale">View My Projects</a>
     </div>
   </section>
 
   <section id="about" class="section reveal">
     <h2 class="section-title">About Me</h2>
     <p class="animate-fade">
-      As a recent graduate in computer science, I am eager to advance my education and develop my technical skills.
-      My experience includes hands-on projects in machine learning and deep learning. I thrive in challenging environments
-      where I can learn and contribute to innovative solutions. I am determined, proactive, and passionate about technology
-      and continuous learning.
+      I am a Computer Science graduate (B.Tech, 2024) with hands-on experience building Machine Learning and
+      Generative AI applications in Python. I have built an employee attrition classification pipeline with Random Forest,
+      Pandas and Scikit-Learn, deployed as a Flask web application; an LLM-powered story generation app using the
+      Google Gemini API and Streamlit; and a deep learning image colorization tool using OpenCV and the CIELAB color space.
     </p>
+    <p class="animate-fade">
+      I am strong in data preprocessing, EDA, feature engineering and responsive interface design, and I am seeking an
+      entry-level role where I can apply my project experience and grow as an engineer.
+    </p>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-group">
+      <h3>Programming</h3>
+      <div class="skills-grid">
+        <span class="skill animate-scale">Python</span>
+        <span class="skill animate-scale">Java</span>
+        <span class="skill animate-scale">C++</span>
+        <span class="skill animate-scale">SQL</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Libraries &amp; Frameworks</h3>
+      <div class="skills-grid">
+        <span class="skill animate-scale">Pandas</span>
+        <span class="skill animate-scale">NumPy</span>
+        <span class="skill animate-scale">Scikit-Learn</span>
+        <span class="skill animate-scale">OpenCV</span>
+        <span class="skill animate-scale">Flask</span>
+        <span class="skill animate-scale">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Core Competencies</h3>
+      <div class="skills-grid">
+        <span class="skill animate-scale">Machine Learning</span>
+        <span class="skill animate-scale">Deep Learning</span>
+        <span class="skill animate-scale">Generative AI (Google Gemini API)</span>
+        <span class="skill animate-scale">Data Preprocessing</span>
+        <span class="skill animate-scale">Exploratory Data Analysis (EDA)</span>
+        <span class="skill animate-scale">Feature Engineering</span>
+        <span class="skill animate-scale">Classification (Random Forest)</span>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Web &amp; Tools</h3>
+      <div class="skills-grid">
+        <span class="skill animate-scale">HTML5</span>
+        <span class="skill animate-scale">CSS3</span>
+        <span class="skill animate-scale">JavaScript</span>
+        <span class="skill animate-scale">Git</span>
+        <span class="skill animate-scale">GitHub</span>
+        <span class="skill animate-scale">Model Serialization (Pickle)</span>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="section reveal">
     <h2 class="section-title">Projects</h2>
     <div class="project-grid">
+
       <div class="project-card">
-        <h3>Employee Attrition Prediction</h3>
-        <p><strong>Overview:</strong> A predictive web application designed to identify potential employee attrition in organizations.</p>
+        <h3>Employee Attrition Prediction System</h3>
+        <p><strong>Overview:</strong> An end-to-end Machine Learning classification pipeline that predicts employee turnover risk from HR analytics data.</p>
         <p><strong>Problem Statement:</strong> High turnover can cost businesses significantly. This tool helps HR make data-driven retention decisions.</p>
-        <p><strong>Solution:</strong> Built a user-friendly interface using Flask to take employee data inputs. Trained a Random Forest Classifier on a Kaggle dataset to predict likelihood of attrition. Exported the model using Pickle for efficient reuse.</p>
-        <p><strong>Key Features:</strong> Real-time prediction, secure form input, minimalistic UI, downloadable report option.</p>
-        <p><strong>Technologies:</strong> Flask, Scikit-learn, Python, pandas, Pickle, HTML/CSS</p>
+        <p><strong>What I Built:</strong></p>
+        <ul>
+          <li>Trained a Random Forest classifier to predict attrition likelihood.</li>
+          <li>Conducted EDA, data cleaning, categorical encoding and feature scaling with Pandas and Scikit-Learn.</li>
+          <li>Serialized the trained model with Pickle and deployed an interactive Flask web application to support HR decision-making.</li>
+        </ul>
+        <p class="tech-line"><strong>Technologies:</strong> Python, Scikit-Learn, Flask, Pandas, Random Forest, Pickle</p>
       </div>
+
       <div class="project-card">
-        <h3>Image Colorization</h3>
-        <p><strong>Overview:</strong> A deep learning-based tool that adds color to grayscale images using neural networks.</p>
-        <p><strong>Problem Statement:</strong> Many historical or black-and-white images lose emotional impact without color. This app brings them to life.</p>
-        <p><strong>Solution:</strong> Trained a convolutional autoencoder using OpenCV datasets to understand pixel mappings. Built a user interface using PySimpleGUI to simplify the colorization process for end users.</p>
-        <p><strong>Key Features:</strong> Drag-and-drop UI, side-by-side original and colorized preview, export to PNG/JPEG.</p>
-        <p><strong>Technologies:</strong> Python, OpenCV, Keras, PySimpleGUI, NumPy</p>
+        <h3>AI Storyteller Web Application</h3>
+        <p><strong>Overview:</strong> An interactive Generative AI app that creates multi-genre stories from user prompts.</p>
+        <p><strong>What I Built:</strong></p>
+        <ul>
+          <li>Used the Google Gemini API for dynamic, prompt-based story generation across genres.</li>
+          <li>Built a responsive Streamlit interface with real-time parameter controls and user input handling.</li>
+          <li>Implemented exception handling and API error management to keep the app reliable, with seamless response streaming.</li>
+        </ul>
+        <p class="tech-line"><strong>Technologies:</strong> Python, Streamlit, Google Gemini API</p>
       </div>
+
+      <div class="project-card">
+        <h3>Automated Image Colorization Tool</h3>
+        <p><strong>Overview:</strong> A deep learning tool that adds color to grayscale images.</p>
+        <p><strong>Problem Statement:</strong> Many historical or black-and-white images lose emotional impact without color. This app brings them to life.</p>
+        <p><strong>What I Built:</strong></p>
+        <ul>
+          <li>Implemented a deep learning model that reconstructs color channels from grayscale inputs in the CIELAB color space.</li>
+          <li>Integrated OpenCV pipelines for efficient batch image preprocessing, resizing and post-inference color conversion.</li>
+          <li>Designed a clean PySimpleGUI interface for image upload and side-by-side comparison of input and output.</li>
+        </ul>
+        <p class="tech-line"><strong>Technologies:</strong> Python, OpenCV, Deep Learning, PySimpleGUI</p>
+      </div>
+
     </div>
   </section>
 
@@ -73,61 +160,50 @@
     <h2 class="section-title">Education</h2>
     <div class="education-grid">
       <div class="education-item animate-fade">
-        <h3>B.Tech - Sri Vasavi Engineering College</h3>
+        <h3>B.Tech in Computer Science and Engineering - Sri Vasavi Engineering College</h3>
         <p>2020-2024 | 78.5%</p>
       </div>
       <div class="education-item animate-fade">
-        <h3>Intermediate - Sasi Junior College</h3>
+        <h3>Intermediate (Class XII, MPC) - Sasi Junior College</h3>
         <p>2018-2020 | 94.7%</p>
       </div>
       <div class="education-item animate-fade">
-        <h3>SSC - Sasi EM High School</h3>
+        <h3>SSC (Class X) - Sasi EM High School</h3>
         <p>2017-2018 | 95%</p>
       </div>
-    </div>
-  </section>
-
-  <section id="skills" class="section reveal">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <span class="skill animate-scale">Java</span>
-      <span class="skill animate-scale">Python</span>
-      <span class="skill animate-scale">C++</span>
-      <span class="skill animate-scale">SQL</span>
-      <span class="skill animate-scale">HTML & CSS</span>
     </div>
   </section>
 
   <section id="achievements" class="section reveal">
     <h2 class="section-title">Achievements</h2>
     <ul class="achievements-list">
+      <li class="animate-fade">Lead Organizer, HackOverflow 2K23 Technical Symposium, Sri Vasavi Engineering College.</li>
       <li class="animate-fade">Participated in Hackoverflow2k22.</li>
-      <li class="animate-fade">Organized Hackoverflow2k23.</li>
-      <li class="animate-fade">Participated in an AWS cloud services workshop by APSCHE.</li>
-      <li class="animate-fade">Completed a 2-month internship on ML by Edunet.</li>
+      <li class="animate-fade">Completed AWS Cloud Services training by the Andhra Pradesh State Council of Higher Education (APSCHE).</li>
+      <li class="animate-fade">Completed a 2-month internship on Machine Learning with Edunet.</li>
     </ul>
   </section>
 
   <section id="certifications" class="section reveal">
     <h2 class="section-title">Certifications</h2>
     <ul class="certifications-list">
-      <li class="animate-fade">Basics of HTML & CSS - Udemy</li>
-      <li class="animate-fade">HTML, CSS, and JavaScript for Beginners - Udemy</li>
-      <li class="animate-fade">Python Certification - Coursera</li>
+      <li class="animate-fade">Python Programming Certification - Coursera</li>
+      <li class="animate-fade">AWS Cloud Services Training - APSCHE</li>
+      <li class="animate-fade">Web Development Course (HTML, CSS, JavaScript) - Udemy</li>
     </ul>
   </section>
 
   <section id="contact" class="section reveal">
     <h2 class="section-title">Contact</h2>
     <p class="animate-fade">
-      <strong>Email:</strong> puretieswar18@gmail.com<br />
-      <strong>Phone:</strong> +91-8074607510<br />
-      <strong>Address:</strong> 2-76, Hanuman Temple Street, Dandagara, Tadepalligudem, 534145
+      <strong>Email:</strong> <a href="mailto:eswarpureti11@gmail.com">eswarpureti11@gmail.com</a><br />
+      <strong>Phone:</strong> <a href="tel:+918074607510">+91-8074607510</a><br />
+      <strong>Location:</strong> Tadepalligudem, Andhra Pradesh, India
     </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Pureti Eswar. All rights reserved.</p>
+    <p>&copy; 2026 Pureti Eswar. All rights reserved.</p>
   </footer>
 
   <a href="#hero" class="back-to-top">↑</a>
